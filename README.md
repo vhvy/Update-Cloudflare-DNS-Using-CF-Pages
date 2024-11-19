@@ -13,13 +13,12 @@
     + 构建命令：     `npm i`
     + 构建输出目录： `/public`
 
-3. 在`Cloudflare Pages` 控制面板 `Settings / Variables and Secrets`中配置环境变量：
-
+3. 配置环境变量：
     + CF_TOKEN: Cloudflare API Token，自行前往 Cloudflare 控制面板获取。
     + CF_ZONE_ID:  Cloudflare ZONE ID，**自行前往** Cloudflare 控制面板获取。
     + VERIFY_TOKEN:  自行设置，调用接口时携带在 header 中鉴权用。
 
-4. 在`Cloudflare Pages` 控制面板 `Deployments / All Deployments`中重新发起部署，因为刚才配置的环境变量需要重新部署才能生效。
+4. 后期在`Cloudflare Pages` 控制面板 `Settings / Variables and Secrets`中可以重新配置环境变量，配置完成后需要在`Cloudflare Pages` 控制面板 `Deployments / All Deployments`中重新发起部署。
 
 
 5. 如何调用：
