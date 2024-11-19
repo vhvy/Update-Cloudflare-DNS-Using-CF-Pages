@@ -1,0 +1,13 @@
+{
+  "name": "Update-Cloudflare-DNS-Using-CF-Pages",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "cf-typegen": "wrangler types --experimental-include-runtime=\"./runtime.d.ts\""
+  },
+  "devDependencies": {
+    "typescript": "^5.5.2",
+    "wrangler": "^3.60.3"
+  }
+}
