@@ -1,6 +1,6 @@
 ## Update-Cloudflare-DNS-Using-CF-Pages
 
-使用的 Mikrotik 路由器上由于网络问题无法直接访问 Cloudflare 的 API，又不想给作为网关的路由器假设代理，所以就用 Cloudflare Pages 写了个代理更新 DNS 的小工具。
+使用的 Mikrotik 路由器上由于网络问题无法直接访问 Cloudflare 的 API，又不想给作为网关的路由器架设代理，所以就用 Cloudflare Pages 写了个代理更新 DNS 的小工具。
 
 ### 如何使用
 
