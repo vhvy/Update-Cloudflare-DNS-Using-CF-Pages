@@ -115,9 +115,7 @@ export const onRequest: PagesFunction<Env> = async ({ request, env }) => {
   if (!dnsType || (dnsType && !DNS_TYPE[dnsType as DNS_TYPE_KEY])) return createResponse(400);
 
   // 没有传递 DNS 信息就拜拜~
-  if (!content || !validator[dnsType as DNS_TYPE_KEY]) return new Response(null, {
-    status: 400
-  });
+  if (!content || !validator[dnsType as DNS_TYPE_KEY]) return createResponse(400);
 
 
   const _fetch = generateRequest(env);
